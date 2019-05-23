@@ -1,9 +1,9 @@
-#Module 5 Group AJAX Calendar
 
 ## Link to the site:
+Link does not work anymore - EC2 instance terminated
 http://ec2-3-90-3-195.compute-1.amazonaws.com/~ptkpyitheim/module5_group/login.html
 
-###Some necessary login information:
+### Some necessary login information:
 Username: ptk 
 Password: ptk
 
