@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="styling/login.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <div id="body">
+            <h1>Welcome to Calendar App!</h1>
+            <h2>Please sign up with a new username or login.</h2>
+
+            <div class="wrap">
+            
+                 <button type="submit" value="signup" id="signupToggle">Sign Up</button>
+                
+
+                <form action="calendar.html" action="POST">
+                    <button type="submit" id="loginAsGuest">Guest User Login</button>
+                </form>
+            </div>
+
+            <div id="signupForm">
+                <p> <strong> Sign Up Form</strong></p>
+
+                <label for="new-user">Username: </label>
+                <input type="text" id="new-user" placeholder="username" required>
+
+                <label for="new-password">Password:  </label>
+                <input type="password" id="new-password" required>
+
+                <button type="submit" id="signupUser">Sign Up</button>
+                
+            </div>
+            
+            <hr>
+
+
+
+            <div class="inputfields">
+                <label for="username">Username: </label>
+                <input type="text" name="username" id="username" placeholder="username" required>
+            </div>
+            <div class="inputfields">
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <button type="submit" id="loginBtn">Login</button>
+
+            <script  ascript" src="login_signup.js"></script>
+
+            <p id="isSuccess"></p>
+
+            
+
+        
+        </div>
+        
+       
+
+ 
+    </body>
+</html>

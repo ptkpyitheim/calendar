@@ -1,0 +1,119 @@
+
+body {
+    font-size: 10px;
+}
+
+
+#calendar-content {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.week {
+    width: 100%;
+    height: 100px;
+    background-color:grey;
+    text-transform: uppercase;
+}
+
+.week .days {
+    width: 13.5%;
+    margin: 0.2%;
+    height: 90%;
+    background-color: lemonchiffon;
+    border: 1px solid black;
+    float: left;
+    overflow: scroll;
+}
+
+#header {
+    display: flex;
+    margin-bottom: 3px;
+    border-bottom: 1px solid black;
+    padding-bottom: 3px;
+    align-items: center;
+}
+
+#username, #title {
+    font-size: 1.6em;
+    margin-right: 5px;
+}
+
+#currMonth, #currYear {
+    font-size: 1.5em;
+    margin-left: auto;
+    font-weight: 800;
+}
+
+#buttons {
+    text-align: right;
+    margin-bottom: 3px;
+    margin-right: 5px;
+}
+
+#event {
+    margin-top: 5px;
+}
+
+#add_event {
+    color:teal;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 1.4em;
+    border-bottom: 0.5px solid black;
+}
+
+#title, #date {
+    font-size: 1em;
+}
+
+#sessions {
+    margin-left: 5px; 
+    background-color: darkgrey;
+    color: white;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+#prev_month_btn, #next_month_btn {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+#addEventBtn {
+    background-color: cornflowerblue;
+    color: white;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+
+.oneEvent {
+    cursor: pointer;
+    color: white;
+    background-color: grey;
+}
+
+
+.delete {
+    float:right;
+    background-color: indianred;
+    color: white;
+}
+
+button {
+    cursor: pointer;
+}
+
+.confirm-edit {
+    float: right;
+    background-color: darkgreen;
+    color: white;
+}
+
+.findEventBtn {
+    margin-top: 10px;
+}

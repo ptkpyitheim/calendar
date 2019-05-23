@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styling/calendar.css">
+
+    <title>Calendar</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- jQuery UI CDN -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+</head>
+<body>
+
+    <div id="header">
+
+        <!-- Needs a way to NOT render user name when there's no session -->
+
+        <div id='username'></div>
+
+        <div id='calendar_title'>Calendar</div>
+            
+        <form action='#' method='POST' id="sessionForm">
+            <button type='submit' id='sessions'></button>
+        </form>
+
+
+        <div id="currMonth"></div>
+        <div id="currYear"></div>
+    </div>
+
+
+    <div id="event">
+        <span id='add_event'>Create event</span>
+
+        <label for="title">Title: </label>
+        <input type="text" name="title" id="title" required>
+
+        <label for="date">Date and Time: </label>
+        <input type="datetime-local" name="date" id="date" required>
+
+        <span>Choose a color tag:</span>
+
+        <select id="colortag">
+            <option value="">Default</option>
+            <option value="darkgreen">Green</option>
+            <option value="darkorange">Orange</option>
+            <option value="indianred">Red</option>
+            <option value="cornflowerblue">Blue</option>              
+        </select>
+
+        <button type="submit" id="addEventBtn">Add</button>
+
+        <br>
+
+        <span>Find event: </span>
+        <input type="text" id="event_search_name" placeholder="event name...">
+        <button class="findEventBtn">Find</button>
+
+        <div id="find_results"></div>
+
+    </div>
+
+
+    <div id="buttons">
+        <button id="jumpBtn">Jump</button>
+
+        <button id="prev_month_btn">Prev</button>
+        <button id="next_month_btn">Next</button>
+
+        <div id="jump">
+            <span>Jump to:</span>
+            <input type="date" id="jump_date">
+            <button id="go">Go!</button>
+        </div>
+    </div>
+
+
+
+    <div id="calendar-content">
+
+        <!-- Example Code to be rendered -->
+                
+        <!-- <div class="week">
+            <div class="days">
+                <div class="oneEvent"> Event name is here </div>
+            </div>
+            <div class="days"></div>
+            <div class="days"></div>
+            <div class="days"></div>
+            <div class="days"></div>
+            <div class="days"></div>
+            <div class="days"></div>
+        </div> -->
+
+
+    </div>
+
+    <!-- Example code for dialog -->
+
+    <!-- <div class="dialog" title="Date of the event">
+        <p id="title_in_dialog"> </p>
+        <p id="time_in_dialog"> </p>
+
+        <hr>
+
+        <button class="edit">Edit</button>
+        <button class="delete">Delete</button>
+
+        <p>New title: </p>
+        <input id="new-title-input" type="text" value="blahbluuu">
+
+        <p>New date: </p>
+        <input id="new-date-input" type="date" value="blah">
+
+        <p>New time: </p>
+        <input id="new-time-input" type="time" value="blah">
+
+        <button class="confirm-edit">Confirm Edit</button>
+    </div> -->
+
+    
+    <script src="login_signup.js"></script>
+    <script src="calendar.js"></script>
+</body>
+</html>
+
